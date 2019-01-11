@@ -1,18 +1,18 @@
 <template>
     <div>
-        <rich-text></rich-text>
+        <publish></publish>
     </div>
 </template>
 
 <script>
-import richText from "../components/richText";
+import publish from "../components/publish";
 
 export default {
   data() {
     return {};
   },
   components: {
-    richText: richText
+    publish: publish
   }
 };
 </script>

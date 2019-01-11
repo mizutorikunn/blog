@@ -20,7 +20,5 @@ npm run build
 npm run lint
 ```
 终于把这个博客做出来了，零零碎碎的做，历时6天，目前是仅是能用状态。简陋，没有访客留言功能。
-现在把这个博客部署在heroku上，使用mlab做数据库。总算是上线了。
-地址是 https://blog-by-cyj.herokuapp.com/
-
-新增了留言功能，目前缓慢制作移动端中
+暂时还没打算花钱租云服务器，所以是用自建的服务器，用花生壳免费送的域名。  g2233574m4.51mypc.cn
+前端用的 VUE 做的，后台是express 数据库 mongodb

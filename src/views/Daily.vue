@@ -1,6 +1,6 @@
 <template>
-  <div id="try">
-    <v-container :list='list' :article='article'  v-loading="loading"></v-container>
+  <div id="daily">
+    <v-container :list="list" :article="article" v-loading="loading"></v-container>
   </div>
 </template>
 
@@ -9,7 +9,7 @@ import container from "../components/container";
 import axios from "axios";
 
 export default {
-  name: "try",
+  name: "daily",
   data() {
     return {
       list: "",
@@ -23,7 +23,8 @@ export default {
   },
   methods: {
     getData() {
-      axios.post("/blog/getData/try").then(Response => {
+      axios.post("/blog/getData/daily").then(Response => {
+      // axios.post("http://localhost:5000/blog/getData/daily").then(Response => {
         this.list = Response.data.list;
         this.article = Response.data.content;
         this.date = Response.data.date;
@@ -36,3 +37,11 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+</style>

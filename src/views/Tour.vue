@@ -1,6 +1,6 @@
 <template>
   <div id="tour">
-    <v-container :list='list' :article='article'  v-loading="loading"></v-container>
+    <v-container :list="list" :article="article" v-loading="loading"></v-container>
   </div>
 </template>
 
@@ -24,6 +24,7 @@ export default {
   methods: {
     getData() {
       axios.post("/blog/getData/tour").then(Response => {
+      // axios.post("http://localhost:5000/blog/getData/tour").then(Response => {
         this.list = Response.data.list;
         this.article = Response.data.content;
         this.date = Response.data.date;
@@ -36,3 +37,6 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+</style>

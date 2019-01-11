@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import Try from './views/Try.vue'
+import Daily from './views/Daily.vue'
 import Technology from './views/Technology.vue';
 import Tour from './views/Tour.vue';
 import admPage from './views/Admin.vue';
@@ -20,9 +20,9 @@ export default new Router({
       name: 'home',
       component: Home
     }, {
-      path: '/try',
-      name: 'try',
-      component: Try
+      path: '/daily',
+      name: 'daily',
+      component: Daily
     }, {
       path: '/technology',
       name: 'technoloty',

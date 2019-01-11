@@ -24,6 +24,7 @@ export default {
   methods: {
     getData() {
       axios.post("/blog/getData/technology").then(Response => {
+        // axios.post("http://localhost:5000/blog/getData/technology").then(Response => {
         this.list = Response.data.list;
         this.article = Response.data.content;
         this.date = Response.data.date;
@@ -36,3 +37,7 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+
+</style>
